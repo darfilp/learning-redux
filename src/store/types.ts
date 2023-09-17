@@ -1,17 +1,20 @@
 export interface Customers {
-    customers: string[]
+  customers: string[];
 }
 
 export interface CustomersAction {
-    type: string,
-    customer: string
+  type: string;
+  customer: {
+    name: string,
+    id: number
+  };
 }
 
 export interface Money {
-    cash: number
+  cash: number;
 }
 
 export interface ActionType {
-    type: string,
-    payload: number
+  type: string;
+  payload: number;
 }
